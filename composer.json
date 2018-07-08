@@ -1,0 +1,33 @@
+{
+    "name": "soumen-dey/laravel-user-agent",
+    "description": "An advanced user agent detector for Laravel 5.5 and above.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Soumen Dey",
+            "email": "soumendeyemail@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/soumen-dey/laravel-user-agent",
+    "keywords": ["Laravel", "UserAgent", "user agent", "browser detect", "device detect", "browser detector", "device detector"],
+    "require": {
+        "illuminate/support": "~5",
+        "hisorange/browser-detect": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Soumen\\Agent\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Soumen\\Agent\\AgentServiceProvider"
+            ],
+            "aliases": {
+                "Agent": "Soumen\\Agent\\Facades\\Agent"
+            }
+        }
+    }
+}
